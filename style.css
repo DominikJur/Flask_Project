@@ -136,7 +136,7 @@ float: left;
 }
 .op:hover
 {
-	background-color: #ffffff;
+	background-color: #dedede;
 	color:#000000;
 	cursor:pointer;
 	
@@ -182,4 +182,8 @@ h1
 	
 	
 }
+a:visited { 
+	text-decoration: none; 
+	color: rgb(255, 255, 255); 
+   }
 
