@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projekt na TI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+
+
+
+        <div id="logo">
+            Projekt na TI
+        </div>
+
+        <div id="nav">
+            <a style="text-decoration:none" href="index"><div class="op">Projekt </div></a>
+            <a style="text-decoration:none" href="zagadnienie"><div class="op">Zagadnienie</div></a>
+            <a style="text-decoration:none" href="authors"><div class="op">O autorach</div></a>
+            <div style="clear:both"></div>
+        </div>
+
+        <div id="topbar">
+            <div id="topbarL"><a href="https://wmat.pwr.edu.pl" target="_blank"><img height="150" width="150" alt="w13"
+                        img src="{{ url_for('static', filename='logo.png')}}"></a></div>
+            <div id="topbarR">
+                <span class="c2">Projekt<br>Technolgie<br> Informacyjne</span>
+            </div>
+        </div>
+        <div id="sidebar">
+            <a style="text-decoration:none" href="index"><div class="c1">Projekt</div></a>
+            <a style="text-decoration:none" href="zagadnienie"><div class="c1">Zagadnienie</div></a> 
+            <a style="text-decoration:none" href="authors"><div class="c1">O autorach</div></a>
+        </div>
+
+        <div id="content">
+            <span class="c2">O autorach </span><br>
+            <div class="dottedline" ></div>
+            O autorach
+        </div>
+
+    </div>
+
+
+
+    <div id="footer">
+        &copy; Wszelkie prawa zastrzeżone
+        <label for="setcolor"></label>
+        <input type="color" id="setcolor">
+    </div>
+    <script src="{{ url_for('static', filename= 'script.js')}}"></script>
+</body>
+
+</html>
