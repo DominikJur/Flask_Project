@@ -3,18 +3,9 @@ body
 	background-color: gray;
 font-family: 'Roboto Mono', monospace;
 }
-
-h2
-{
-	font-size: 30px;
-	text-align: middle;
-	
-	
-	
-	
-	
+img{
+	color:red;
 }
-
 #container
 {
 	width: 1000px;
@@ -40,7 +31,7 @@ h2
 {
 	background-color: #000000;
 	margin-top: 30px;
-	color: #FFFFFF;
+	color: lightgray;
 	padding: 20px;
 	
 	font-size: 14px;
@@ -49,18 +40,16 @@ h2
 }
 #topbar
 {
-	background-color: #FFFFFF;
-	color: #FFFFFF;
-	
+	color: #9b8644;
+	background-color: lightgray;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 185px;
 	
-	
-	
 }
 #sidebar
 {
+	color:lightgray;
 	float: left;
 	width: 149px;
 	height: 480px;
@@ -79,14 +68,14 @@ h2
 	float: left;
 	padding: 30px;
 	width: 750px;
-	background-color: lightgray;
+	background-color: #d3d3d3;
 	height: 460px;
 	text-align: justify;
 }
 #footer
 {
 	clear: both;
-	color: white;
+	color: lightgray;
 	text-align: center;
 	padding: 10px;
 	background-color: gray;
@@ -102,28 +91,16 @@ h2
 }
 #topbarR
 {
+	
 	float: left;
 	text-align: left;
 	padding: 20px;
 	width: 770px;
 	height: 145px;
-	background-color: #9b8644;
-}
-
-#opis
-{
-	float: left;
-	
-	width: 300px;
-}
-#obraz
-{
-float: left;	
-	
 }
 .op
 {
-	
+	color: lightgray;
 	float: left;
 	min-width: 50px;
 	height: 25px;
@@ -136,7 +113,7 @@ float: left;
 }
 .op:hover
 {
-	background-color: #dedede;
+	background-color: lightgray;
 	color:#000000;
 	cursor:pointer;
 	
@@ -145,7 +122,7 @@ float: left;
 
 .c1
 {
-	color:#dedede;
+	color:lightgray;
 	border-bottom: 1px dotted #444444;
 	padding: 20px;
 	
@@ -154,7 +131,7 @@ float: left;
 }
 .c1:hover
 {
-	background-color: #dedede;
+	background-color: lightgray;
 	color: #000000;
 	cursor: pointer;
 	
@@ -175,16 +152,3 @@ float: left;
 	
 	
 }
-h1
-{
-	letter-spacing: 2px;
-	font-size: 20px;
-	
-	
-	
-}
-a:visited { 
-	text-decoration: none; 
-	color: rgb(255, 255, 255); 
-   }
-
