@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
 <head>
     <meta charset="UTF-8">
     <title>Projekt na TI</title>
-
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
 </head>
 
@@ -24,23 +23,38 @@
             <div style="clear:both"></div>
         </div>
 
-        <div id="topbar">
-            <div id="topbarL"><a href="https://wmat.pwr.edu.pl" target="_blank"><img height="150" width="150" alt="w13"
-                        img src="{{ url_for('static', filename='logo.png')}}"></a></div>
-            <div id="topbarR">
-                <span class="c2">Projekt<br>Technolgie<br> Informacyjne</span>
-            </div>
-        </div>
-        <div id="sidebar">
-            <a style="text-decoration:none" href="index"><div class="c1">Projekt</div></a>
-            <a style="text-decoration:none" href="zagadnienie"><div class="c1">Zagadnienie</div></a> 
-            <a style="text-decoration:none" href="authors"><div class="c1">O autorach</div></a>
-        </div>
-
-        <div id="content">
-            <span class="c2">Logarytm </span><br>
+        <div id="content_zagadnienie">
+            <div class="c3">Logarytm </div>
             <div class="dottedline" ></div>
-            Zagadnienie
+            <h2>Słowem wstępu</h2>
+            <p>Dodawanie, mnożenie i podnoszenie do potęgi to trzy fundamentalne działania matematyczne. Dla każdego z nich istnieją ich odwrotności. W przypadku dodawania jest to odejmowanie a dla mnożenia dzielenie. Odwrotnością potęgowania jest natomiast logarytm, któremu poświęcona jest niniejsza strona.</p>
+            <h2>Historia</h2>
+            <div class="column"><p>Początki logarytmów sięgają początku XVII wieku, kiedy to nauka zaczęła wymagać coraz obszerniejszych obliczeń. Astronomowie i matematycy, tacy jak John Napier i Joost Burgi, zmagali się z żmudnymi mnożeniami liczb wielocyfrowych.</p>
+            <p>W 1614 roku Napier opublikował swoje koncepcje logarytmów - metody wiążącej mnożenie z dodawaniem. Przyniosły one rewolucję na płaszczyźnie nauk matematycznych. Zamiana problemów z mnożeniem na prostsze działania dodawania znacznie skróciła czas obliczeń.</p></div>
+            <div class="column"><p>Początkowo istniały różne wariacje tej idei, ale później Henry Briggs opracował powszechnie używane dziś logarytmy dziesiętne. One, wraz z pierwotną koncepcją Napiera, stały się podstawą dla obszernych tablic logarytmicznych publikowanych w XVII-XIX wieku.</p>
+            <p>Kolejnym ważnym krokiem był logarytm naturalny, o podstawie z liczby Eulera. Choć nie był to oryginalny wynalazek Napiera, wywodził się on z udoskonalenia jego idei i miał później odegrać kluczową rolę w rachunku różniczkowym.</p></div>
+            <h1>Definicja</h1>
+            <div class ="definition">Dla dodatniej liczby rzeczywistej b różnej od 1 logarytm o podstawie b z dodatniej liczby a definiuje się jako wykładnik, do którego należy podnieść podstawę b, aby uzyskać wartość a.</div>
+            <div class="maths"> $$\log_b(a)$$</div>
+            <div class ="definition"> $$b>0\quad  b\neq1 \quad  a>0$$ </div>
+            <h2>Własności</h2>
+            <ul>
+                <li>Logarytm liczby 1 przy dowolnej podstawie jest równy 0</li>
+                $$\forall_{b} \quad \log_b{1}=0$$
+                <li>Logarytm liczby a przy podstawie a jest równy 1</li>
+                $$\forall_{a} \quad \log_a{a}=1$$
+                <li>Logarytm iloczynu jest sumą logarytmów</li>
+                $$\forall_{a,b,c} \quad \log_b{(ac)}=\log_b{a}+\log_b{c}$$
+                <li>Logarytm ilorazu jest różnicą logarytmów</li>
+                $$\forall_{a,b,c \neq 0} \quad \log_b{\frac{a}{c}}=\log_b{a}-\log_b{c}$$
+                <li>Logarytm potęgi jest iloczynem wykładnika i logarytmu podstawy</li>
+                $$\forall_{a,b,c} \quad \log_b{a^{c}}=c\log_b{a}$$
+                <li>Wzór na zamianę podstawy logarytmu</li>
+                $$\forall_{a,b,c} \quad \log_b{a}=\frac{\log_c{a}}{\log_c{b}}$$
+
+
+            </ul>
+
         </div>
 
     </div>
@@ -52,7 +66,7 @@
         <label for="setcolor"></label>
         <input type="color" id="setcolor">
     </div>
-    <script src="{{ url_for('static', filename= 'script.js')}}"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
