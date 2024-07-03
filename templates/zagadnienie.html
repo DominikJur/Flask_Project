@@ -56,11 +56,9 @@
             </ul>
             <h2>Wykresy funkcji logarytmicznych</h2>
             <form action="{{ url_for('zagadnienie') }}" method="POST">
-                Wpisz podstawe logarytmu, oraz dziedzine funkcji:
+                Wpisz podstawe logarytmu:
                 <br>
-                Podstawa: <input type="text" name="funkcja"><br>
-                xmin: <input type="text" name="xmin"><br>
-                xmax: <input type="text" name="xmax"><br>
+                Podstawa: <input type="text" name="base"><br>
                 <input type="submit" value="Potwierdź">
             </form>
             <div id="response"></div>
