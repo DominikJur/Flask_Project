@@ -27,7 +27,7 @@
             <div class="c3">Logarytm </div>
             <div class="dottedline" ></div>
             <h2>Słowem wstępu</h2>
-            <p>Dodawanie, mnożenie i podnoszenie do potęgi to trzy fundamentalne działania matematyczne. Dla każdego z nich istnieją ich odwrotności. W przypadku dodawania jest to odejmowanie a dla mnożenia dzielenie. Odwrotnością potęgowania jest natomiast logarytm, któremu poświęcona jest niniejsza strona.</p>
+            <div class="sw"><p>Dodawanie, mnożenie i podnoszenie do potęgi to trzy fundamentalne działania matematyczne. Dla każdego z nich istnieją ich odwrotności. W przypadku dodawania jest to odejmowanie a dla mnożenia dzielenie. Odwrotnością potęgowania jest natomiast logarytm, któremu poświęcona jest niniejsza strona.</p></div>
             <h2>Historia</h2>
             <div class="column"><p>Początki logarytmów sięgają początku XVII wieku, kiedy to nauka zaczęła wymagać coraz obszerniejszych obliczeń. Astronomowie i matematycy, tacy jak John Napier i Joost Burgi, zmagali się z żmudnymi mnożeniami liczb wielocyfrowych.</p>
             <p>W 1614 roku Napier opublikował swoje koncepcje logarytmów - metody wiążącej mnożenie z dodawaniem. Przyniosły one rewolucję na płaszczyźnie nauk matematycznych. Zamiana problemów z mnożeniem na prostsze działania dodawania znacznie skróciła czas obliczeń.</p></div>
@@ -36,7 +36,7 @@
             <h1>Definicja</h1>
             <div class ="definition">Dla dodatniej liczby rzeczywistej b różnej od 1 logarytm o podstawie b z dodatniej liczby a definiuje się jako wykładnik, do którego należy podnieść podstawę b, aby uzyskać wartość a.</div>
             <div class="maths"> $$\log_b(a)$$</div>
-            <div class ="definition"> $$b>0\quad  b\neq1 \quad  a>0$$ </div>
+            <div class ="def_2"> $$b>0\quad  b\neq1 \quad  a>0$$ </div>
             <h2>Własności</h2>
             <ul>
                 <li>Logarytm liczby 1 przy dowolnej podstawie jest równy 0</li>
@@ -56,14 +56,14 @@
             </ul>
             <h2>Wykresy funkcji logarytmicznych</h2>
             <form action="{{ url_for('zagadnienie') }}" method="POST">
-                Wpisz podstawe logarytmu:
+                <div class="input">Wpisz podstawę logarytmu
                 <br>
                 Podstawa: <input type="text" name="base"><br>
-                <input type="submit" value="Potwierdź">
+                <input type="submit" value="Potwierdź"></div>
             </form>
             <div id="response"></div>
             
-            <img src="{{plot}}" alt="Wykresy funkcji logarytmicznych">
+            <img src="{{plot}}" alt="Wykresy funkcji logarytmicznych" class="wykres">
 
         </div>
 
