@@ -85,6 +85,11 @@ img{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+#photo
+{
+	margin-top: 40px;
+	text-align: center
+}
 #footer
 {
 	clear: both;
