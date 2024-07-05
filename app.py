@@ -24,7 +24,6 @@ def authors():
 
 @app.route("/zagadnienie", methods=["POST", "GET"])
 def zagadnienie():
-    print(session)
     if request.method == "POST":
         try:
             session["base"] = float(request.form["base"])
