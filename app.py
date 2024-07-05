@@ -24,14 +24,20 @@ def authors():
 
 @app.route("/zagadnienie", methods=["POST", "GET"])
 def zagadnienie():
+    feedback = ""
     if request.method == "POST":
         try:
-            session["base"] = float(request.form["base"])
+            if float(request.form["base"]) > 0 and float(request.form["base"]) != 1:
+                session["base"] = float(request.form["base"])
+                feedback = "Zmieniono podstawę logarytmu na " + request.form["base"] + "."
+            else:
+                session["base"] = np.e
+                feedback = "Podstawa logarytmu musi być liczbą dodatnią nierówną 1. Ustawiono domyślną wartość e."
         except ValueError:
             session["base"] = np.e
     base = session.get("base", np.e)
     return render_template(
-        "zagadnienie.html", plot=plot_log(base=base, xmin=0.001, xmax=20.001)
+        "zagadnienie.html", plot=plot_log(base=base, xmin=0.001, xmax=20.001), feedback=feedback
     )
 
 
