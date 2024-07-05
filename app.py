@@ -35,6 +35,7 @@ def zagadnienie():
                 feedback = "Podstawa logarytmu musi być liczbą dodatnią nierówną 1. Ustawiono domyślną wartość e."
         except ValueError:
             session["base"] = np.e
+            feedback = "Podstawa logarytmu musi być liczbą dodatnią nierówną 1. Ustawiono domyślną wartość e."
     base = session.get("base", np.e)
     return render_template(
         "zagadnienie.html", plot=plot_log(base=base, xmin=0.001, xmax=20.001), feedback=feedback
