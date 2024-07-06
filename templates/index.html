@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Projekt na TI</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="static/style.css" type="text/css" >
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 
 
 
-        <div id="logo" alt="Logo wydziału matematyki Politechniki Wrocławskiej">
+        <div id="logo" >
             Projekt na TI
         </div>
 
@@ -26,7 +26,7 @@
 
         <div id="topbar">
             <div id="topbarL"><a href="https://wmat.pwr.edu.pl" target="_blank"><img height="150" width="150" alt="w13"
-                        img src="{{ url_for('static', filename='logo.png')}}"></a></div>
+                src="static/logo.png"></a></div>
             <div id="topbarR">
                 <span class="c2">Projekt<br>Technolgie<br> Informacyjne</span>           
             </div>
@@ -42,7 +42,7 @@
             <div class="dottedline" ></div>
             Zapraszamy wszystkich wielbicieli matematyki do zapoznania się z naszą stroną internetową
             poświęconą zagadnieniu logarytmów. Obecnie znajdujesz się na stronie głównej. 
-            Jeśli chcesz dowiedzieć się czegoś o logarytach lub skorzystać z kalkulatora logarytmów wyposażonego w wykres, wejdź w zakładkę &bdquo;Zagadnienie&rdquo;.
+            Jeśli chcesz dowiedzieć się czegoś o logarytmach lub skorzystać z kalkulatora logarytmów wyposażonego w wykres, wejdź w zakładkę &bdquo;Zagadnienie&rdquo;.
             Jeżeli interesują Cię autorzy tej strony, zapoznaj się z zakładką &bdquo;O autorach&rdquo;.
             <br><br>
             Serdecznie pozdrawiamy!
@@ -58,7 +58,7 @@
         <label for="setcolor"></label>
         <input type="color" id="setcolor">
     </div>
-    <script src="{{ url_for('static', filename= 'script.js')}}"></script>
+    <script src="static/script.js"></script>
 </body>
 
 </html>

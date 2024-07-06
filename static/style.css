@@ -197,6 +197,16 @@ p
 	margin-left: 30px;
 	margin-right: 30px;
 }
+ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+ul .no-bullet {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
 .column
 {
 	float: left;
